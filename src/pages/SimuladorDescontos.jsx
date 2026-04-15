@@ -12,6 +12,14 @@ export default function SimuladorDescontos(){
 
   function calcular(){
 
+    if (preco === "") {
+      alert ("Digite um preço valido");
+      return
+    } if (desconto === "") {
+      alert ("Selecione um desconto valido");
+      return
+    }
+
     let precoD = 0;
 
     switch(desconto){

@@ -1,9 +1,13 @@
 import SimuladorDescontos from "./pages/SimuladorDescontos"
+import './Componentes/estilo.css'
 
 export default function App(){
   return(
-    <div>
-      <SimuladorDescontos></SimuladorDescontos>
-    </div>
+    <>
+      <SimuladorDescontos />
+      <div className="footer">
+        Feito por Rafael Bonaldi e Raphael Negreiro
+      </div>
+    </>
   )
 }

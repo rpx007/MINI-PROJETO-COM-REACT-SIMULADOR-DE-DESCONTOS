@@ -38,16 +38,14 @@ export default function SimuladorDescontos(){
     setTotal(precoD);
   }
 
-  return(
-    <div>
-      <h1>Calcular descontos</h1>
-
-      <EntradaValor preco={preco} setPreco={setPreco} />
-      <SeletorCliente desconto={desconto} setDesconto={setDesconto} />
-      <BotaoCalcular calcular={calcular} />
-
-      <Resultado total={total} desconto={desconto} />
-
-    </div>
+ 
+return(
+  <div className="main-container">
+    <h1>Calcular descontos</h1>
+    <EntradaValor preco={preco} setPreco={setPreco} />
+    <SeletorCliente desconto={desconto} setDesconto={setDesconto} />
+    <BotaoCalcular calcular={calcular} />
+    <Resultado total={total} desconto={desconto} />
+  </div>
   )
 }

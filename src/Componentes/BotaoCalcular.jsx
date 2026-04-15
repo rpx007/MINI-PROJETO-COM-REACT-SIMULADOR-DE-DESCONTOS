@@ -1,7 +1,10 @@
+// BotaoCalcular
 export default function BotaoCalcular({calcular}){
-    return(
-        <button onClick={calcular}>
-      Verificar desconto
-    </button>
-    )
+  return(
+    <div className="button-container">
+      <button onClick={calcular}>
+        Calcular Desconto
+      </button>
+    </div>
+  )
 }

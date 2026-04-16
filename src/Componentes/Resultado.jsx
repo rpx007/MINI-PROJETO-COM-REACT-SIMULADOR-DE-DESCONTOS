@@ -1,7 +1,7 @@
 export default function Resultado({ total, desconto }){
   if(total === null) return null;
   
-  const valorComDesconto = total * (1 - desconto/100);
+  const valorComDesconto = total
   
   return (
     <div className="result-container">
